@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import Topo from './components/Topo';
+
+import Home from './components/Home';
+import Sobre from './components/Sobre';
+import Servico from './components/Servico';
+import Contato from './components/Contato';
+import Parceria from './components/Parceria';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Topo />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/Sobre">
+          <Sobre />
+        </Route>
+        <Route path="/Servico">
+          <Servico />
+        </Route>
+        <Route path="/Contato">
+          <Contato />
+        </Route>
+        <Route path="/Parceria">
+          <Parceria />
+        </Route>
+      </Switch>
+    
+    </BrowserRouter>
+
+    );
 }
 
 export default App;
