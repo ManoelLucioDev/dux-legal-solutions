@@ -1,0 +1,29 @@
+.container-cardServico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+.container-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imageServico{
+    margin-top:35px;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.titulo{
+    font-size: 22px;
+    color: #150760;
+   
+  
+}

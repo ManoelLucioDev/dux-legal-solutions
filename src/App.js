@@ -8,6 +8,7 @@ import Sobre from './components/Sobre';
 import Servico from './components/Servico';
 import Contato from './components/Contato';
 import Parceria from './components/Parceria';
+import Footer from './components/Footer';
 
 
 
@@ -32,6 +33,8 @@ function App() {
           <Parceria />
         </Route>
       </Switch>
+
+      <Footer />
     
     </BrowserRouter>
 

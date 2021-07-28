@@ -1,0 +1,24 @@
+.container-card-info{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+
+.image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.titulo-card-info{
+    color:#150760;
+    text-align: center;
+}
+
+.texto-card-info{
+    color: #150760;
+    text-align: justify;
+    font-size: 15px;
+}

@@ -1,0 +1,57 @@
+.container-01{
+    background-image: url(../../assets/coliseum1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 43px 0;
+}
+
+h1{
+    color: #150760;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+}
+h2{
+    color: #150760;
+    font-size: 24px;
+}
+p{
+    color: #150760;
+    font-size: 22px;
+    text-align: justify;
+    padding: 0 50px ;
+}
+
+.container-02{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+
+.foto{
+    height: 260px;
+}
+
+.text-02{
+    width: 50%;
+}
+
+.container-03{
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.text-03{
+    text-align: center;
+}
+
+.container-04{
+    display: flex;
+    padding: 70px 10px;
+}
