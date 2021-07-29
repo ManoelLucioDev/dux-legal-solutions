@@ -17,24 +17,24 @@ function Servico(){
         <div className="container-servico">
         <h1 className="titulo-servico">SERVIÇOS</h1>
             <CardServico
-            imageServico= {adm}
-            titulo = "ADMINISTRATIVOS / CONSULARES E JURÍDICOS"
+            serviceImage= {adm}
+            title = "ADMINISTRATIVOS / CONSULARES E JURÍDICOS"
             />
             <CardServico
-            imageServico= {administrativo}
-            titulo = "CONSULTORIA"
+            serviceImage= {administrativo}
+            title = "CONSULTORIA"
             />
             <CardServico
-            imageServico= {cidadania}
-            titulo = "CIDADANIA ITALIANA"
+            serviceImage= {cidadania}
+            title = "CIDADANIA ITALIANA"
             />
             <CardServico
-            imageServico= {advogado}
-            titulo = "ADVOCACIA"
+            serviceImage= {advogado}
+            title = "ADVOCACIA"
             />
             <CardServico
-            imageServico= {documento}
-            titulo = "ADVOCACIA"
+            serviceImage= {documento}
+            title = "ADVOCACIA"
             />
         </div>
         </>

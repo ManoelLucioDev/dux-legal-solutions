@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import foto from "../../assets/foto-shirlei.jpg";
 import CardInfo from "../CardInfo";
@@ -35,7 +35,7 @@ function Home() {
       <section className="container-02">
         <h1>A RESPEITO DA FUNDADORA</h1>
 
-        <img src={foto} className="foto" />
+        <img src={foto} alt="fundadora" className="foto" />
 
         <p className="text-02">
           Shirlei Soares, advogada brasileira e consultora jurídica habilitada,
@@ -62,28 +62,28 @@ function Home() {
       <section className="container-04">
         <CardInfo
           image={juridico}
-          titulo="SERVIÇOS PERSONALIZADOS"
-          texto="Estratégias de trabalho personalizadas de acordo com as exigências e necessidades de cada cliente."
+          title="SERVIÇOS PERSONALIZADOS"
+          text="Estratégias de trabalho personalizadas de acordo com as exigências e necessidades de cada cliente."
         />
 
         <CardInfo
           image={solucao}
-          titulo="SOLUÇÃO EM 360 GRAUS"
-          texto="A ampla rede formada pelos nossos parceiros e as boas relações profissionais permite 
+          title="SOLUÇÃO EM 360 GRAUS"
+          text="A ampla rede formada pelos nossos parceiros e as boas relações profissionais permite 
           a DUX resolver mais diversas problemáticas."
         />
 
         <CardInfo
           image={comunicacao}
-          titulo="COMUNICAÇÃO ASSERTIVA"
-          texto="Comunicação através de uma linguagem moderna, acessível e humanizada, 
+          title="COMUNICAÇÃO ASSERTIVA"
+          text="Comunicação através de uma linguagem moderna, acessível e humanizada, 
           fundamentais à cndução de um trrabalho ético e transparente."
         />
 
         <CardInfo
           image={etica}
-          titulo="ATUAÇÃO ÉTICA"
-          texto="Garantia de um alto padrão, com colaboradores idôneos e de boa reputação no mercado profissional."
+          title="ATUAÇÃO ÉTICA"
+          text="Garantia de um alto padrão, com colaboradores idôneos e de boa reputação no mercado profissional."
         />
       </section>
     </>

@@ -12,7 +12,7 @@ function Topo (){
         <div className="container">
         <div className="container-nav">
         
-            <img src={Logo} className="logo" />;
+            <img src={Logo} alt="logo" className="logo" />;
             <ul>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/sobre">HISTORIA</Link></li>  
@@ -24,8 +24,8 @@ function Topo (){
             
         </div>
         <div className="container-sociais">
-            <a href="https://www.instagram.com/dux.legalsolutions/" target="_blank"><img src={insta} className="insta" /></a>
-            <a href="https://www.facebook.com/Dux-Legal-Solutions-103870414954742/" target="_blank"><img src={face} className="face" /></a>  
+            <a href="https://www.instagram.com/dux.legalsolutions/" target="_blank" rel="noopener noreferrer"><img src={insta} alt="instagram link" className="insta" /></a>
+            <a href="https://www.facebook.com/Dux-Legal-Solutions-103870414954742/" target="_blank" rel="noopener noreferrer"><img src={face} alt="facebook link" className="face" /></a>  
         </div>
                                
         </div>

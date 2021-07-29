@@ -36,7 +36,7 @@ function Contato() {
             
             <label>
                 MENSAGEM:
-                <textarea type="text" rows="20"/>
+                <textarea rows={20} />
             </label>
 
             <button type="submit">ENVIAR</button>
