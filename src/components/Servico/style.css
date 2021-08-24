@@ -4,3 +4,7 @@
     width: 100%;
 }
 
+.icon:hover{
+    cursor:pointer;
+}
+

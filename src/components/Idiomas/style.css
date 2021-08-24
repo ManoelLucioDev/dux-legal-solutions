@@ -1,0 +1,10 @@
+.idiomas{
+    
+    display: flex;
+    height: 25px;
+    width: 50%;
+}
+
+.idiomas img{
+    margin-left: 15px;
+}

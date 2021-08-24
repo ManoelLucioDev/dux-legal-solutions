@@ -9,13 +9,23 @@ import Servico from './components/Servico';
 import Contato from './components/Contato';
 import Parceria from './components/Parceria';
 import Footer from './components/Footer';
+import { I18nProvider } from './i18n';
+
+
 
 
 
 function App() {
   return (
+
+    
+
     <BrowserRouter>
+      
+
+
       <Topo />
+      
       <Switch>
         <Route exact path="/">
           <Home />
@@ -35,7 +45,7 @@ function App() {
       </Switch>
 
       <Footer />
-    
+      
     </BrowserRouter>
 
     );

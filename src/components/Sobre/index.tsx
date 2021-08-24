@@ -1,8 +1,22 @@
 import React from "react";
+
+
+
 import './style.css';
 
+
+
+
+
 function Sobre() {
+
+
+
+
+
   return (
+    
+    
     <div className="container-sobre">
       <h1>QUEM É A DUX?</h1>
 
@@ -42,6 +56,9 @@ function Sobre() {
         nosso acolhimento!
       </p>
     </div>
+
+    
+    
   );
 }
 

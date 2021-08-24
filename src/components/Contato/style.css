@@ -25,6 +25,7 @@ form{
     
 }
 
+
 .container-form{
     display: flex;
     flex-direction: column;
@@ -36,6 +37,10 @@ label{
     width: 60%;
     margin-bottom: 20px;
     color: #150760;
+}
+
+input{
+    height: 25px;
 }
 
 
