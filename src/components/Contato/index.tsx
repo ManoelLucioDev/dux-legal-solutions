@@ -14,7 +14,7 @@ function Contato() {
       </h3>
        <form action="https://api.staticforms.xyz/submit" method="POST">
 
-       <input type="hidden" name="accessKey" value="8eb40820-1f1f-42f6-a386-1a74a10250c8" />
+       <input type="hidden" name="accessKey" value="c9093100-a626-46b7-8f67-5b86afedea3f" />
        <input type="hidden" name="redirectTo" value=""></input>
 
            <div className="container-form">
@@ -42,7 +42,7 @@ function Contato() {
                 MENSAGEM:
                 <textarea rows={20} name="message"/>
             </label>
-
+            {/**<input type="hidden" name="redirectTo" value="https://example.com/contact/success"></input> */}   
             <button type="submit">ENVIAR</button>
             
            </div>
