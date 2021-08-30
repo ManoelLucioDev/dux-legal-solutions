@@ -7,28 +7,18 @@ import juridico from "../../assets/juridico.png";
 import solucao from "../../assets/solucao.jpg";
 import comunicacao from "../../assets/comunicacao.jpg";
 import etica from "../../assets/etica.png";
+import translate from '../../i18n/translate'
 
-function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <section className="container-01">
-        <h1>Seja bem vindo à DUX LEGAL SOLUTIONS</h1>
+        <h1>{translate('WELCOME')}</h1>
 
-        <h2>Porque é maravilhoso realizar os sonhos com apoio!</h2>
+        <h2>{translate('GOD')}</h2>
 
         <p className="text-01">
-          Oferecemos assistência e consultoria jurídica para o imigrante em 360
-          graus; do planejamento do processo de imigração à consolidação da vida
-          civil, bem como; consultoria e assistência administrativa, serviços
-          jurídicos e advocacia. Nossas atividades são personalizadas e
-          desenvolvidas a partir da necessidade pessoal de cada cliente, com
-          toda responsabilidade, objetividade e segurança jurídica necessária,
-          prezando por uma comunicação assertiva e, acima de tudo, uma relação
-          ética, transparente e colaborativa entre os envolvidos.   Lembre-se de
-          que seu desejo de iniciar uma vida nova e de consolidá-la em outro
-          país não precisa se tornar um pesadelo. Conte a Dux Legal Solutions
-          para facilitar este processo de modo cômodo, ético e seguro. Conte com
-          o nosso acolhimento!
+          {translate('SUBJECT')}
         </p>
       </section>
 
@@ -69,14 +59,14 @@ function Home() {
         <CardInfo
           image={solucao}
           title="SOLUÇÃO EM 360 GRAUS"
-          text="A ampla rede formada pelos nossos parceiros e as boas relações profissionais permite 
+          text="A ampla rede formada pelos nossos parceiros e as boas relações profissionais permite
           a DUX resolver mais diversas problemáticas."
         />
 
         <CardInfo
           image={comunicacao}
           title="COMUNICAÇÃO ASSERTIVA"
-          text="Comunicação através de uma linguagem moderna, acessível e humanizada, 
+          text="Comunicação através de uma linguagem moderna, acessível e humanizada,
           fundamentais à cndução de um trrabalho ético e transparente."
         />
 

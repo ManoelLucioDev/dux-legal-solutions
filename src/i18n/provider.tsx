@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { IntlProvider } from 'react-intl';
-
-
 import { LOCALES } from './locales';
 import messages from './messages';
 
-function Provider  ({children, locale = LOCALES.PORTUGUESE}) {
+interface ProviderProps {
+  locale: string;
+}
 
-    
+const Provider : React.FC<ProviderProps> = ({children, locale = LOCALES.PORTUGUESE}) => {
     return (
     <IntlProvider
         locale={locale}
@@ -16,7 +16,7 @@ function Provider  ({children, locale = LOCALES.PORTUGUESE}) {
         >
         {children}
     </IntlProvider>
-);
+    );
 }
 export default Provider;
 

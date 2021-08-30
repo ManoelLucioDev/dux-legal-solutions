@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import Topo from './components/Topo';
@@ -9,23 +9,27 @@ import Servico from './components/Servico';
 import Contato from './components/Contato';
 import Parceria from './components/Parceria';
 import Footer from './components/Footer';
-import { I18nProvider } from './i18n';
+import { I18nProvider, LOCALES } from './i18n';
 
 
 
 
 
-function App() {
+const App: React.FC = () => {
+  const [locale, setLocale] = useState(LOCALES.ITALIAN);
+
   return (
 
-    
 
+    <I18nProvider locale={locale}>
+         <button onClick={() => setLocale(LOCALES.PORTUGUESE)}>PORTUGUES</button>
+          <button onClick={() => setLocale(LOCALES.ITALIAN)}>ITALIANO</button>
     <BrowserRouter>
-      
+
 
 
       <Topo />
-      
+
       <Switch>
         <Route exact path="/">
           <Home />
@@ -43,11 +47,10 @@ function App() {
           <Parceria />
         </Route>
       </Switch>
-
       <Footer />
-      
-    </BrowserRouter>
 
+    </BrowserRouter>
+    </I18nProvider>
     );
 }
 
