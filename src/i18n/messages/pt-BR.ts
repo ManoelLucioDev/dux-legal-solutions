@@ -5,6 +5,14 @@ export default {
     [LOCALES.PORTUGUESE]: {
       'HOME': 'HOME',
 
+      'ABOUT': 'SOBRE',
+
+      'SERVICE': 'SERVIÇO',
+
+      'CONTACT': 'CONTATO',
+
+      'PARTNERSHIP': 'PARCERIA',
+
       'WELCOME': 'Seja bem vindo à DUX LEGAL SOLUTIONS',
 
       'GOD': 'Porque é maravilhoso realizar os sonhos com apoio!',

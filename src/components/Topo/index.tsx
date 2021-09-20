@@ -1,5 +1,6 @@
-import React from 'react';
+
 import Logo from '../../assets/logoDux.png';
+import translate from "../../i18n/translate";
 
 import './style.css';
 import { Link } from 'react-router-dom';
@@ -19,11 +20,11 @@ function Topo (){
             <img src={Logo} alt="logo" className="logo" />
 
             <ul>
-                <li><Link to="/">HOME</Link></li>
-                <li><Link to="/sobre">HISTORIA</Link></li>
-                <li><Link to="/servico">SERVIÇOS</Link></li>
-                <li><Link to="/contato">CONTATO</Link></li>
-                <li><Link to="/parceria">PARCERIA</Link></li>
+                <li><Link to="/">{translate('HOME')}</Link></li>
+                <li><Link to="/sobre">{translate('ABOUT')}</Link></li>
+                <li><Link to="/servico">{translate('SERVICE')}</Link></li>
+                <li><Link to="/contato">{translate('CONTACT')}</Link></li>
+                <li><Link to="/parceria">{translate('PARTNERSHIP')}</Link></li>
 
             </ul>
 

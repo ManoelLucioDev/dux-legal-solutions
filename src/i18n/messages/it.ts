@@ -5,7 +5,16 @@ import { LOCALES } from '../locales';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     [LOCALES.ITALIAN]: {
+
       'HOME': 'HOME',
+
+      'ABOUT': 'DI',
+
+      'SERVICE': 'SERVIZIO',
+
+      'CONTACT': 'CONTATTO',
+
+      'PARTNERSHIP': 'COLLABORAZIONE',
 
       'WELCOME': 'Benvenuto in DUX LEGAL SOLUTIONS',
 
