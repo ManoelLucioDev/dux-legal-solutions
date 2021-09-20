@@ -1,55 +1,51 @@
 import React from "react";
+import translate from "../../i18n/translate";
+import emailjs from 'emailjs-com';
 
 function Parceria() {
+
+
+  function enviarEmail(e: any){
+    e.preventDefault();
+
+    emailjs.sendForm('gmailMessage', 'template_zua2zai', e.target, 'user_dtkC4ch8LJM5Hn531jJQb')
+    .then((result) => {
+      console.log('Mensagem enviada com sucesso')
+    },(error) => {
+      console.log(error.message)
+    });
+    e.target.reset();
+  }
+
   return (
     <>
       
 
       <div className="container-contato">
-      <h1 className="container-texto">PARCERIA</h1>
+      <h1 className="container-texto">{translate('TITLE-PARTNERSHIP')}</h1>
         <h3 className="container-texto">
-          SEJA VOCE TAMBEM O NOSSO PARCEIRO, SEJA UM CONSULTOR DUX LEGAL
-          SOLUTIONS{" "}
+          {translate('SUBTITLE-PARTNERSHIP-01')}
         </h3 >
-        <h4 className="container-texto">ATUAÇÃO COM AUTONOMA E INDEPENDENCIA FINANCEIRA</h4>
+        <h4 className="container-texto">{translate('SUBTITLE-PARTNERSHIP-02')}</h4>
         <p className="container-texto">
-          A Dux Legal Solutions nao para de crescer e busca constantemente
-          expandir e fortalecer a sua rede de apoio e atuaçao geografica.
-          Estamos sempre em busca de parceiros, profissionais liberais ou pessoa
-          juridica, que possam contribuir na expansao dos nossos serviços em
-          nossos terrirorios de atuacao. Se voce è advogado, administrador,
-          contador ou tenha qualquer função que englobe uma carteira de clientes
-          ou uma ampla rede social, poderá trabalhar em parceira conosco. O
-          perfil que procuramos é de pessoas sérias, íntegras, comprometidas com
-          o bom atendimento e respeito aos nossos principios e clientes.
-          Qualquer que seja sua área de atuação, poderá nos apoiar em sua
-          região, estado ou cidade. Caso haja interesse, favor preencher e
-          enviar o formulário ao lado, então entraremos em contato para agendar
-          uma videoconferencia, a fim de avaliar a possibilidade de aprofundar o
-          conhecimento do seu perfil e fornecer as orientações gerais sobre
-          nosso modo de atuação.
+          {translate('TEXT-PARTNERSHIP')}
         </p>
-        <form>
+        <form onSubmit={enviarEmail}>
           <div className="container-form">
-            <h2>FORMULÁRIO DE PROPOSTA DE PARCERIA</h2>
+            <h2>{translate("TITLE-FORM")}</h2>
             <label>
               NOME:
-              <input type="text" />
+              <input type="text" name= 'name' />
             </label>
 
             <label>
               E-MAIL:
-              <input type="email" />
-            </label>
-
-            <label>
-              TELEFONE:
-              <input type="text" />
+              <input type="email" name= 'email' />
             </label>
 
             <label>
               CELULAR:
-              <input type="text" />
+              <input type="text" name='phone' />
             </label>
 
             

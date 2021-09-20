@@ -1,49 +1,64 @@
+import emailjs from 'emailjs-com';
 import React from "react";
+import translate from "../../i18n/translate";
 import './style.css';
 
 function Contato() {
+
+  
+
+  function enviarEmail(e: any){
+    e.preventDefault();
+
+    emailjs.sendForm('gmailMessage', 'template_t7ze1y2', e.target, 'user_dtkC4ch8LJM5Hn531jJQb')
+    .then((result) => {
+      console.log('Mensagem enviada com sucesso')
+    },(error) => {
+      console.log(error.message)
+    });
+    e.target.reset();
+  }
+
   return (
     <>
-      <h1>CONTATO</h1>
+      <h1>{translate("TITLE-CONTACT")}</h1>
       
       <div className="container-contato">
       <h3 className="container-texto">
-        A DUX LEGALSOLUTIONS está sempre aberta para você e sua empresa. Envie
-        uma mensagem para nosso e-mail ou entre em contato com o nosso
-        escritório.
+        {translate("TEXT-CONTACT")}
       </h3>
-       <form action="https://api.staticforms.xyz/submit" method="POST">
+       <form onSubmit={enviarEmail}>
 
-       <input type="hidden" name="accessKey" value="c9093100-a626-46b7-8f67-5b86afedea3f" />
-       <input type="hidden" name="redirectTo" value=""></input>
+       
 
            <div className="container-form">
            <label>
-            NOME:
+            {translate('NAME-CLIENT')}
            <input type="text" name="name"/>
            </label>
 
            <label>
-            E-mail:
+            {translate('EMAIL-CLIENT')}
            <input type="email" name="email" />
            </label>
 
            <label>
-            TELEFONE:
+            {translate('PHONE-CLIENT')}
            <input type="text" name="phone"/>
            </label>
 
            <label>
-            ASSUNTO:
+            {translate('ABOUT-CLIENT')}
            <input type="text" name="subject"/>
            </label>
             
             <label>
-                MENSAGEM:
+                {translate('MSG-CLIENT')}
                 <textarea rows={20} name="message"/>
             </label>
+            
             {/**<input type="hidden" name="redirectTo" value="https://example.com/contact/success"></input> */}   
-            <button type="submit">ENVIAR</button>
+            <button type="submit">{translate('BTN-SUBMIT')}</button>
             
            </div>
                 

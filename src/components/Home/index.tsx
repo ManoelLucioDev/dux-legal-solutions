@@ -23,57 +23,44 @@ const Home: React.FC = () => {
       </section>
 
       <section className="container-02">
-        <h1>A RESPEITO DA FUNDADORA</h1>
+        <h1>{translate('TITLE-FOUNDRESS-ABOUT')}</h1>
 
         <img src={foto} alt="fundadora" className="foto" />
 
         <p className="text-02">
-          Shirlei Soares, advogada brasileira e consultora jurídica habilitada,
-           residente na Itália.  Em Portugal, é advogada inscrita no Conselho de
-          Lisboa da Ordem dos Advogados Portugueses. No Brasil tem uma
-          experiência consolidada em matéria de gestão pública, direito
-          administrativo e processos de gestão, foi também docente universitária
-          de direito, por mais de sete anos. Atualmente, ocupa-se na prestação
-          de consultoria jurídica em um importante escritório de advocacia na
-          província de Treviso e é a idealizadora e fundadora da Dux Legal
-          Solutions.
+          {translate('TEXT-FOUNDRESS-ABOUT')}
         </p>
       </section>
       <section className="container-03">
-        <h1>NOSSO CÓDIGO DE CONDUTA</h1>
+        <h1>{translate('TITLE-CODE-CONDUCT')}</h1>
 
         <p className="text-03">
-          Contamos com uma rede de colaboradores e parceiros localizados no
-          Brasil e na Itália, composto de profissionais liberais que seguem os
-          nossos valores e garantem o fornecimento de serviços eficientes e de
-          alto nível.
+          {translate('TEXT-CODE-CONDUCT')}
         </p>
       </section>
       <section className="container-04">
-        <CardInfo
+        <CardInfo 
           image={juridico}
-          title="SERVIÇOS PERSONALIZADOS"
-          text="Estratégias de trabalho personalizadas de acordo com as exigências e necessidades de cada cliente."
+          title={"TITLE-LEGAL"}
+          text={"TEXT-LEGAL"}
         />
 
         <CardInfo
           image={solucao}
-          title="SOLUÇÃO EM 360 GRAUS"
-          text="A ampla rede formada pelos nossos parceiros e as boas relações profissionais permite
-          a DUX resolver mais diversas problemáticas."
+          title={"TITLE-SOLUTION"}
+          text={"TEXT-SOLUTION"}
         />
 
         <CardInfo
           image={comunicacao}
-          title="COMUNICAÇÃO ASSERTIVA"
-          text="Comunicação através de uma linguagem moderna, acessível e humanizada,
-          fundamentais à cndução de um trrabalho ético e transparente."
+          title={"TITLE-COMUNICATION"}
+          text={"TEXT-COMUNICATION"}
         />
 
         <CardInfo
           image={etica}
-          title="ATUAÇÃO ÉTICA"
-          text="Garantia de um alto padrão, com colaboradores idôneos e de boa reputação no mercado profissional."
+          title={"TITLE-ETHICAL"}
+          text={"TEXT-ETHICAL"}
         />
       </section>
     </>

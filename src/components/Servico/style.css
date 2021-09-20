@@ -4,7 +4,22 @@
     width: 100%;
 }
 
-.icon:hover{
-    cursor:pointer;
+
+.topics-services{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+   
+}
+.topics-services p{
+    font-size: 18px;
+    
 }
 
+.data-services{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #540983;
+    
+}

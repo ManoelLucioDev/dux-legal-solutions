@@ -4,18 +4,12 @@ import Logo from '../../assets/logoDux.png';
 import './style.css';
 import { Link } from 'react-router-dom';
 
-import insta from '../../assets/instagram.png';
-import face from '../../assets/facebook.png';
 
-
-import Idiomas from '../Idiomas/indesx';
-
-
-function Topo (){
 
 
 
 
+function Topo (){
 
     return(
 
@@ -34,17 +28,7 @@ function Topo (){
             </ul>
 
         </div>
-        <div className="wraper-social-idiomas">
-
-
-           <Idiomas />
-            <div className="container-sociais">
-
-            <a href="https://www.instagram.com/dux.legalsolutions/" target="_blank" rel="noopener noreferrer"><img src={insta} alt="instagram link" className="insta" /></a>
-            <a href="https://www.facebook.com/Dux-Legal-Solutions-103870414954742/" target="_blank" rel="noopener noreferrer"><img src={face} alt="facebook link" className="face" /></a>
-
-            </div>
-        </div>
+  
         </div>
 
 

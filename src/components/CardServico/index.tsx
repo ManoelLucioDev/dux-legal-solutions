@@ -1,4 +1,5 @@
-import React from 'react';
+
+import translate from '../../i18n/translate';
 import './style.css';
 
 interface CardServicoProps {
@@ -9,12 +10,22 @@ interface CardServicoProps {
 function CardServico(props: CardServicoProps){
     return(
        <>
-       <div className="container-image">
-           <img className="imageServico" alt={props.title} src={props.serviceImage} />
-        </div>
-        <div className="container-cardServico"> 
-        <h3 className="titulo">{props.title}</h3>
-        </div>
+        
+            <div className='wraper-service'>
+                
+                    <img className="imageServico" alt={props.title} src={props.serviceImage} />
+                
+                
+                    <h3 className="titulo">{translate(props.title)}</h3>
+                
+
+            </div>
+            
+
+
+
+       
+       
         </>
     );
 }
