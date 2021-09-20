@@ -1,5 +1,6 @@
 import { LOCALES } from '../locales';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     [LOCALES.PORTUGUESE]: {
       'HOME': 'HOME',
@@ -77,5 +78,7 @@ export default {
       'TITLE-FORM': "FORMULÁRIO DE PROPOSTA DE PARCERIA"
 
     }
+  
+  }
 
-}
+
