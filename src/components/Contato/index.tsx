@@ -42,6 +42,18 @@ schema
 
 function Contato() {
   return (
+      
+<>
+    <h1>CONTATO</h1>
+      
+    <div className="container-contato">
+    <h3 className="container-texto">
+      A DUX LEGALSOLUTIONS está sempre aberta para você e sua empresa. Envie
+      uma mensagem para nosso e-mail ou entre em contato com o nosso
+      escritório.
+    </h3>
+    
+
       <div className="form-container">
     <Form onSubmit={handleSubmit}>
       <Row className="mb-3">
@@ -101,6 +113,9 @@ function Contato() {
       <Button type="submit">Submit form</Button>
     </Form>
     </div>
+    </div>
+</>
+
   );
 }
 

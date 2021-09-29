@@ -74,7 +74,7 @@ export default {
 
       'ABOUT-CLIENT': "SOGGETTO:",
 
-      'MSG-CLIENT': "MESSAGGIO",
+      'MSG-CLIENT': "MESSAGGIO:",
 
       'BTN-SUBMIT': "INVIARE",
 
