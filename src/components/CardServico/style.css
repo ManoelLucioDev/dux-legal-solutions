@@ -1,36 +1,18 @@
-.container-cardServico{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-    
+.wraper-service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageServico {
+  margin: 15px 0;
+  height: 50px;
+  width: 50px;
 }
 
-
-
-.imageServico{
-    margin-top:35px;
-    height: 50px;
-    width: 50px;
+.titulo {
+  text-align: center;
+  font-size: 15px;
+  color: #150760;
 }
-
-
-
-.titulo{
-    font-size: 22px;
-    color: #150760;
-   
-  
-}
-
-.wraper-service{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-

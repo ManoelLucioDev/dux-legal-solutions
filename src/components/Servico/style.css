@@ -1,25 +1,14 @@
-.container-servico{
-    padding: 25px  0;
-    background-color: #f0f0f0;
-    width: 100%;
+.container-servico {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px 20px;
+
+  height: 100vh;
+  width: 100%;
 }
 
-
-.topics-services{
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-   
-}
-.topics-services p{
-    font-size: 18px;
-    
-}
-
-.data-services{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #540983;
-    
+.data-services {
+  width: 100%;
+  display: flex;
 }

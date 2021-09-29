@@ -1,3 +1,5 @@
+
+
 .container-contato{
     display: flex;
     flex-direction: column;
@@ -10,16 +12,17 @@
         width: 80%;
         text-align: center;
     }
- 
+
+
     
     
     form{
-       
-        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
         width: 80%;
         background-color: #f0f0f0;
         border: 1px solid black;
-        margin: 25px 0;
+       
         
     }
     
@@ -32,7 +35,9 @@
         color: #150760;
     }
     
-    
+    @media only screen and (max-width: 700px){
+
+    }
     
     
     

@@ -39,6 +39,7 @@ const Home: React.FC = () => {
         </p>
       </section>
       <section className="container-04">
+        
         <CardInfo 
           image={juridico}
           title={"TITLE-LEGAL"}

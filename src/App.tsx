@@ -1,7 +1,9 @@
-import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Topo from "./components/Topo";
+
+import React, { useState } from "react";
+
+import * as ReactBootstrap from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Home from "./components/Home";
 import Sobre from "./components/Sobre";
@@ -9,20 +11,53 @@ import Servico from "./components/Servico";
 import Contato from "./components/Contato";
 import Parceria from "./components/Parceria";
 import Footer from "./components/Footer";
-import { I18nProvider, LOCALES } from "./i18n";
+
+import Logo from "./assets/logoDux.png";
+import translate from "./i18n/translate";
 
 import Port from "./assets/port.jpeg";
 import It from "./assets/it.jpeg";
-import insta from './assets/instagram.png';
-import face from './assets/facebook.png';
+import insta from "./assets/instagram.png";
+import face from "./assets/facebook.png";
+
+import { I18nProvider, LOCALES } from "./i18n";
 
 const App: React.FC = () => {
   const [locale, setLocale] = useState(LOCALES.ITALIAN);
 
   return (
     <I18nProvider locale={locale}>
-      <BrowserRouter>
-        <Topo />
+      <Router>
+        <div className="container-nav">
+          <ReactBootstrap.Navbar
+            collapseOnSelect
+            expand="lg"
+            bg="white"
+            variant="light"
+          >
+            <ReactBootstrap.Navbar.Brand as={Link} to={"/"}>
+              <img src={Logo} alt="logo" className="logo" />
+            </ReactBootstrap.Navbar.Brand>
+            <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
+              <ReactBootstrap.Nav className="me-auto"></ReactBootstrap.Nav>
+              <ReactBootstrap.Nav>
+                <ReactBootstrap.Nav.Link as={Link} to={"/"}>
+                  {translate("HOME")}
+                </ReactBootstrap.Nav.Link>
+                <ReactBootstrap.Nav.Link as={Link} to={"/sobre"}>
+                  {translate("ABOUT")}
+                </ReactBootstrap.Nav.Link>
+                <ReactBootstrap.Nav.Link as={Link} to={"/servico"}>
+                  {translate("SERVICE")}
+                </ReactBootstrap.Nav.Link>
+                <ReactBootstrap.Nav.Link as={Link} to={"/contato"}>
+                  {translate("CONTACT")}
+                </ReactBootstrap.Nav.Link>
+              </ReactBootstrap.Nav>
+            </ReactBootstrap.Navbar.Collapse>
+          </ReactBootstrap.Navbar>
+        </div>
         <div className="wraper-social-idiomas">
           <div className="idiomas">
             <img
@@ -72,8 +107,9 @@ const App: React.FC = () => {
             <Parceria />
           </Route>
         </Switch>
+
         <Footer />
-      </BrowserRouter>
+      </Router>
     </I18nProvider>
   );
 };

@@ -3,20 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^2.8.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "5.1.1",
     "emailjs-com": "^3.2.0",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.16.1",
     "react-intl": "^5.20.10",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "styled-components": "^5.3.0",
+    "styled-components": "^5.3.1",
     "typescript": "^4.3.5",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,10 +29,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint --fix 'src/**/{*.js,*.jsx}'"
   },
-
   "eslintConfig": {
-
-
     "extends": [
       "react-app",
       "react-app/jest"

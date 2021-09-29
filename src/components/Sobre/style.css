@@ -1,9 +1,13 @@
-.container-sobre{
-    background-color: #f0f0f0;
-    padding: 40px 0;
+.title {
+  margin-bottom: 30px;
 }
 
+.container-sobre {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
 
-.texto-sobre{
-    text-align: justify;
+.texto-sobre {
+  text-align: justify;
+  font-size: 18px;
 }

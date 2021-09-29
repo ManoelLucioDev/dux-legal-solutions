@@ -30,9 +30,11 @@ function Parceria() {
         <p className="container-texto">
           {translate('TEXT-PARTNERSHIP')}
         </p>
+        
+      
         <form onSubmit={enviarEmail}>
-          <div className="container-form">
-            <h2>{translate("TITLE-FORM")}</h2>
+        <div className="container-form">
+            <h2 >{translate("TITLE-FORM")}</h2>
             <label>
               NOME:
               <input type="text" name= 'name' />
@@ -51,9 +53,10 @@ function Parceria() {
             
 
             <button type="submit">ENVIAR</button>
-          </div>
+            </div>
         </form>
-      </div>
+        </div>
+     
     </>
   );
 }
