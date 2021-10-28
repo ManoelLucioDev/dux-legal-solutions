@@ -9,9 +9,9 @@ const Sobre: React.FC = () =>{
   return (
     <>
    
-    <h1 className="title">{translate('TITLE-ABOUT')}</h1>
+    
       <div className="container-sobre">
-        
+      <h1 className="title">{translate('TITLE-ABOUT')}</h1>
       
 
       <p className="texto-sobre">

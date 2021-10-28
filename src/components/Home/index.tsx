@@ -12,7 +12,11 @@ import translate from '../../i18n/translate'
 const Home: React.FC = () => {
   return (
     <>
+
+      
+
       <section className="container-01">
+        
         <h1>{translate('WELCOME')}</h1>
 
         <h2>{translate('GOD')}</h2>

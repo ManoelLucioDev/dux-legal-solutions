@@ -1,7 +1,13 @@
+.titulo-servico{
+  margin: 30px 0;
+}
+
 .container-servico {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
+  
   padding: 15px 20px;
 
   height: 100vh;
@@ -9,6 +15,6 @@
 }
 
 .data-services {
-  width: 100%;
+ 
   display: flex;
 }

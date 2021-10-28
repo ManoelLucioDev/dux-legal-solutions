@@ -2,8 +2,10 @@ import "./App.css";
 
 import React, { useState } from "react";
 
-import * as ReactBootstrap from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+
 
 import Home from "./components/Home";
 import Sobre from "./components/Sobre";
@@ -22,6 +24,7 @@ import face from "./assets/facebook.png";
 
 import { I18nProvider, LOCALES } from "./i18n";
 
+
 const App: React.FC = () => {
   const [locale, setLocale] = useState(LOCALES.ITALIAN);
 
@@ -29,34 +32,35 @@ const App: React.FC = () => {
     <I18nProvider locale={locale}>
       <Router>
         <div className="container-nav">
-          <ReactBootstrap.Navbar
+          <Navbar
             collapseOnSelect
             expand="lg"
             bg="white"
             variant="light"
+            
           >
-            <ReactBootstrap.Navbar.Brand as={Link} to={"/"}>
+            <Navbar.Brand as={Link} to={"/"} >
               <img src={Logo} alt="logo" className="logo" />
-            </ReactBootstrap.Navbar.Brand>
-            <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
-              <ReactBootstrap.Nav className="me-auto"></ReactBootstrap.Nav>
-              <ReactBootstrap.Nav>
-                <ReactBootstrap.Nav.Link as={Link} to={"/"}>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" >
+              <Nav className="me-auto" ></Nav>
+              <Nav  style={{ paddingLeft:' 30px' }} >
+                <Nav.Link  as={Link} to={"/"} style={{ color: '#150760', fontWeight: 'bold' }} >
                   {translate("HOME")}
-                </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link as={Link} to={"/sobre"}>
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/sobre"} style={{ color: '#150760', fontWeight: 'bold' }}>
                   {translate("ABOUT")}
-                </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link as={Link} to={"/servico"}>
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/servico"} style={{ color: '#150760', fontWeight: 'bold' }}>
                   {translate("SERVICE")}
-                </ReactBootstrap.Nav.Link>
-                <ReactBootstrap.Nav.Link as={Link} to={"/contato"}>
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/contato"} style={{ color: '#150760', fontWeight: 'bold',  }}>
                   {translate("CONTACT")}
-                </ReactBootstrap.Nav.Link>
-              </ReactBootstrap.Nav>
-            </ReactBootstrap.Navbar.Collapse>
-          </ReactBootstrap.Navbar>
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         </div>
         <div className="wraper-social-idiomas">
           <div className="idiomas">
@@ -115,3 +119,5 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+

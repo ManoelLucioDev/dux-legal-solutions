@@ -1,9 +1,18 @@
+*{
+  box-sizing: border-box;
+}
+
+.container-contato h1{
+  margin-top: 30px;
+}
+
 .container-contato {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 .container-texto {
   font-size: 18px;
@@ -15,8 +24,60 @@
 
 .form-container {
     display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 10px 0;
+    flex-direction: column;
+   
+  
+  width: 65%;
+  
   
 }
+
+.form{
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 30px;
+ 
+}
+
+.form label{
+  color:#150760;
+}
+
+
+
+.form textarea{
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #150760;
+}
+
+.form input{
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #150760;;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.form button[type="submit"]{
+  background-color: #150760;
+  color: white;
+  width: 30%;
+  
+
+
+ 
+}
+
+.form button[type="submit"]:hover{
+  
+  background-color: #140760c9;
+}
+
+

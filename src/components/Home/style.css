@@ -8,15 +8,30 @@
   padding: 43px 0;
 }
 
+.nav a{
+  color: red;
+}
+
+.container-01 h1 {
+  color: #150760;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container-01 h2 {
+  color: #150760;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
 h1 {
   color: #150760;
   font-size: 36px;
   width: 100%;
   text-align: center;
-}
-h2 {
-  color: #150760;
-  font-size: 24px;
+  margin-bottom: 25px;
 }
 p {
   color: #150760;
